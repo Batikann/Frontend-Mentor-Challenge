@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: hsl(243, 87%, 12%);
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2em;
+  margin: 0;
+}
+
+h1,
+h2,h5 {
+  font-family: "Raleway", sans-serif;
+}
+
+.container {
+  max-width: 100%;
+  width: 1200px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.flex div {
+  flex: 1;
+}
+
+.main-1 {
+    margin-right: 20px;
+  }
+  
+.main-2 {
+    margin-left: 20px;
+  }
+
+/*NAVBAR*/
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 0;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+}
+
+nav ul li {
+  margin-left: 50px;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: hsl(243, 87%, 12%);
+}
+
+form {
+  display: flex;
+}
+
+input {
+  border: 1px solid hsl(243, 87%, 12%);
+  border-radius: 2px;
+  flex: 0.7;
+  padding: 15px;
+}
+
+button {
+  padding: 15px;
+  background-color: hsl(224, 93%, 58%);
+  border: 1px solid hsl(224, 93%, 58%);
+  color: white;
+  flex: 0.3;
+  margin-left: 10px;
+}
+
+.light-blueish {
+  background-color: hsl(240, 75%, 98%);
+position: relative;
+  margin-top: 100px;
+  padding: 50px 0;
+}
+
+.light-blueish::before {
+    content: '';
+  background-image: url("./images/bg-curve-desktop.svg");
+  position: absolute;
+  top: -60px;
+  left: 0;
+  height: 60px;
+  width: 100%;
+  background-size: cover;
+}
+
+.green{
+    color:hsl(170, 45%, 43%) ;
+}
+
+.testimonial-box{
+    background-color: #fff;
+    padding: 25px;
+    margin-top: 40px;
+    width: 80%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.testimonial-box p{
+    letter-spacing: 1px;
+    line-height: 1.7;
+    font-size: 14px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.user-info{
+    display: flex;
+    align-items: center;
+}
+
+.user-info h5{
+    margin: 0;
+    font-weight: 700;
+}
+
+.user-title{
+    margin-left: -280px;
+}
+
+
+.user-info img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+
+.blueish{
+  background-color: hsl(238, 22%, 44%);
+  color: #fff;
+  padding: 50px 0;
+}
+
+.blueish-main-2 form{
+  display: flex;
+  flex-direction: column;
+}
+
+.blueish-main-2 button{
+     width: 50%;
+}

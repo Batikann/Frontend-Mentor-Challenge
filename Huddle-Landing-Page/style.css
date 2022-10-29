@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("images/bg-desktop.svg");
+  background-color: hsl(257, 40%, 49%);
+  background-repeat: no-repeat;
+}
+
+.container {
+  max-width: 100%;
+  padding: 20px;
+}
+
+.logo {
+  display: flex;
+  height: 60px;
+  align-items: center;
+  padding-top: 60px;
+  padding-left: 60px;
+  margin-bottom: 100px;
+}
+
+.logo-img {
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.left-side {
+  margin: 0 5rem;
+}
+
+.left-side img {
+  width: 100%;
+}
+.right-side {
+  width: 400px;
+}
+
+.right-side h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #fff;
+  font-size: 31px;
+  line-height: 50px;
+  margin-bottom: 2rem;
+}
+
+.right-side p {
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 2rem;
+}
+
+.right-side button {
+  padding: 1rem 4rem;
+  border-radius: 30px;
+  border: none;
+  font-size: 15px;
+  color: hsl(257, 40%, 49%);
+}
+
+.right-side button:hover {
+  background-color: hsl(300, 69%, 71%);
+  color: #fff;
+  box-shadow: -1px 1px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.socials-div {
+  position: relative;
+}
+
+.socials {
+  display: flex;
+  list-style-type: none;
+  position: absolute;
+  bottom: 30px;
+  right: 50px;
+}
+
+.socials li {
+  margin-left: 20px;
+  font-size: 23px;
+}
+
+.socials li a {
+  color: #fff;
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8px;
+  border: 1px solid #fff;
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+
+.socials li a:hover {
+  color: hsl(300, 69%, 71%);
+  border: 1px solid hsl(300, 69%, 71%);
+}
+
+@media (max-width: 1024px) {
+  .left-side {
+    margin: 0 2rem;
+  }
+}
+
+@media (max-width: 426px) {
+  .left-side img {
+    width: 100%;
+  }
+  .logo {
+    display: flex;
+    height: 60px;
+    align-items: center;
+    padding-top: 60px;
+    padding-left: 60px;
+    margin-bottom: 60px;
+  }
+
+  .left-side {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .right-side {
+    margin: 0 5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+
+  .right-side h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: #fff;
+    font-size: 31px;
+    line-height: 40px;
+    margin-bottom: 0.5rem;
+  }
+
+  .right-side p {
+    margin: 0 30px;
+    margin-bottom: 15px;
+  }
+
+  .socials-div {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .socials {
+    display: flex;
+    list-style-type: none;
+    position: absolute;
+    right: 140px;
+    bottom: 20px;
+
+  }
+
+}
+
+
+@media (max-width: 376px) {
+    .left-side img {
+      width: 100%;
+    }
+  
+    .left-side {
+      margin-bottom: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .flex {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .right-side {
+      margin: 0 5rem;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .right-side h2 {
+      font-family: "Poppins", sans-serif;
+      font-weight: 700;
+      color: #fff;
+      font-size: 31px;
+      line-height: 40px;
+      margin-bottom: 0.5rem;
+    }
+  
+    .right-side p {
+      margin: 0 30px;
+      margin-bottom: 35px;
+    }
+  
+    .socials-div {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .socials {
+      display: flex;
+      list-style-type: none;
+      position: absolute;
+      right: 110px;
+      bottom: 110px;
+  
+    }
+  
+  }
