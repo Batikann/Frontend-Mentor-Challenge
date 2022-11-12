@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    background: linear-gradient(180deg,hsl(273, 75%, 66%) , hsl(240, 73%, 65%));
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.faq-container{
+    background-color: hsl(240, 5%, 91%);
+    display: flex;
+    padding: 3rem;
+    max-width: 700px;
+    border-radius: 10px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 10rem;
+}
+
+.title{
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.answer{
+    padding-bottom: 1rem;
+}
+
+/*
+.left-side{
+    background-image: url('./images/illustration-woman-online-desktop.svg');
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+*/
+.question{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.faq{
+    margin-bottom: 1rem;
+    border-bottom: 1px solid hsl(240, 6%, 50%);
+    cursor: pointer;
+}

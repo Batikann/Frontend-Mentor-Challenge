@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+body {
+  background-color: hsl(205, 33%, 90%);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notifications-div {
+  background-color: hsl(0, 0%, 100%);
+  width: 720px;
+  padding: 2rem;
+  margin-top: 3rem;
+  border-radius: 10px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header div:first-child {
+  font-size: 1.5rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.header div:first-child span {
+  background-color: hsl(219, 85%, 26%);
+  color: hsl(0, 0%, 100%);
+  font-size: 1rem;
+  padding: 0.2rem 0.7rem;
+  border-radius: 0.3rem;
+  margin-left: 0.5rem;
+}
+
+.header {
+  margin-bottom: 1rem;
+}
+
+.header div:last-child {
+  cursor: pointer;
+}
+
+.header div:last-child:hover {
+  color: hsl(219, 85%, 26%);
+}
+
+.notification,
+.notification-tip-2,
+.notification-tip-3,
+.notification-last {
+  display: flex;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+.notification {
+  background-color: hsl(210, 60%, 98%);
+  margin-top: 0.5rem;
+
+}
+
+.notification-tip-2 {
+
+  margin-bottom: 2rem;
+}
+
+.notification-tip-3{
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.notification-last{
+  margin-top: -1.5rem;
+}
+
+.right-side img {
+  width: 3rem;
+  margin-right: 0.8rem;
+}
+
+.name {
+  font-weight: 800;
+  margin-right: 5px;
+  color: black;
+}
+
+.time {
+  color: hsl(219, 14%, 63%);
+}
+
+.link {
+  color: hsl(219, 85%, 26%);
+  font-weight: 800;
+  margin-left: 5px;
+}
+
+.content,
+.content-2 {
+  display: flex;
+  align-items: center;
+  color: hsl(219, 14%, 63%);
+}
+
+.content-2 {
+  margin-bottom: 5px;
+}
+
+.content-3 {
+  color: hsl(219, 12%, 42%);
+  margin-bottom: 5px;
+}
+
+.content {
+  justify-content: center;
+}
+
+.notification-tip-2 .left-side .time {
+  margin-bottom: 10px;
+}
+
+.circle {
+  background-color: hsl(1, 90%, 64%);
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  border-radius: 50%;
+  margin-left: 8px;
+}
+
+.notification-tip-2 .left-side {
+  display: flex;
+  flex-direction: column;
+}
+
+.recive {
+  border: 1px solid hsl(219, 14%, 63%);
+  padding: 1rem;
+  color: hsl(219, 12%, 42%);
+  border-radius: 5px;
+}
+
+.recive:hover {
+  cursor: pointer;
+  background-color: hsl(205, 33%, 90%);
+}
+
+.notification-tip-3 .left-side {
+  display: flex;
+  justify-content: space-between;
+  max-width: 700px;
+}
+
+.left-side-3 img {
+  width: 3rem;
+  position: absolute;
+  right: 15px;
+}
+
+.bold-title {
+  font-weight: 800;
+  color: hsl(219, 12%, 42%);
+}
+
+@media (max-width: 767px) {
+  .content,
+  .content-2,
+  .content {
+    display: inline-block;
+  }
+
+  .link {
+    margin-left: 0;
+  }
+
+  .right-side img{
+    width: 2.5rem;
+    margin-right: 0.5rem;
+  }
+
+
+  .left-side-3 img{
+    width: 2.5rem;
+    right: 10px;
+  }
+
+  .different{
+    width: 250px;
+  }
+
+ 
+}
+
+@media (max-width:376px){
+  .notifications-div {
+    background-color: hsl(0, 0%, 100%);
+    width: 720px;
+    padding: 1rem;
+    margin-top: 3rem;
+    border-radius: 10px;
+  }
+  .different{
+    font-size: 0.9rem;
+  }
+  .left-side-3 img{
+    width: 2rem;
+    right: 5px;
+  }
+
+  .header div:first-child {
+    font-size: 1.2rem;
+    
+  }
+  
+  .header div:first-child span {
+  
+    font-size: 0.8rem;
+    padding: 0.2rem 0.5rem;
+
+  }
+}
