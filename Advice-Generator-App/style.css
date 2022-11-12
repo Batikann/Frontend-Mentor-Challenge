@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+}
+body{
+    background-color: hsl(218, 23%, 16%);
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 15rem;
+    position: relative;
+}
+
+.box{
+    background-color:  hsl(217, 19%, 24%);
+    width: 550px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 15px;
+}
+
+.header{
+    color: hsl(150, 100%, 66%);
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    letter-spacing: 3px;
+}
+
+.advice-box{
+    color:  hsl(193, 38%, 86%);
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.p-text{
+    width: 400px;
+}
+
+.advice-number{
+    margin-left: 0.5rem;
+    letter-spacing: 3px;
+}
+
+
+.divider{
+    margin-top: 2rem;
+    background-image: url("./images/pattern-divider-desktop.svg");
+    width: 450px;
+    height: 50px;
+    background-repeat: no-repeat;
+
+}
+
+.btn img{
+    padding: 1rem ;
+}
+
+.btn{
+    background-color: hsl(150, 100%, 66%);
+    position: absolute;
+    bottom: -25px;
+    border-radius: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.btn:hover{
+    box-shadow: 3px 3px 66px 5px rgba(82,255,168,0.66);
+}
+
+
+@media(max-width:769px) and (min-width:426px){
+
+    .box{
+        width: 450px;
+        padding: 2rem;
+    }
+
+    .divider{
+        background-image: url("./images/pattern-divider-desktop.svg");
+        width: 410px;
+        height: 50px;
+        background-repeat: no-repeat;
+    }
+
+    .btn{
+        bottom: -25px;
+        margin-left: 2rem;
+    }
+}
+
+@media(max-width:426px){
+
+    .box{
+        width: 350px;
+        padding: 2rem;
+    }
+
+    .divider{
+        background-image: url("./images/pattern-divider-mobile.svg");
+        width: 290px;
+        height: 50px;
+        background-repeat: no-repeat;
+    }
+
+    .p-text{
+        width: 280px;
+    }
+}
