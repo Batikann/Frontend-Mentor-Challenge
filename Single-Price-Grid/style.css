@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: hsl(204, 43%, 93%);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Karla", sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10rem;
+}
+
+.up-div {
+  width: 700px;
+  padding: 3rem;
+  background-color: #fff;
+}
+
+.under-div {
+  display: flex;
+}
+
+.under-div .left-side {
+  background-color: hsl(179, 62%, 43%);
+  width: 350px;
+  padding: 2rem;
+  height: 300px;
+}
+
+.under-div .right-side {
+  background-color: hsla(179, 62%, 43%, 0.7);
+  width: 350px;
+  padding: 2rem;
+}
+
+h3 {
+  color: hsl(204, 43%, 93%);
+}
+
+.header {
+  color: hsl(179, 62%, 43%);
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.header-2 {
+  color: hsl(71, 73%, 54%);
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.text {
+  color: hsl(218, 22%, 67%);
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+
+.left-side h3,
+.right-side h3 {
+  margin-bottom: 1.5rem;
+}
+.right-side p {
+  color: hsl(204, 43%, 93%);
+  font-weight: 400;
+  font-size: 16px;
+  width: 200px;
+  line-height: 25px;
+}
+
+.per {
+  display: flex;
+  align-items: center;
+  color: hsla(204, 43%, 93%, 0.5);
+  margin-bottom: 0.5rem;
+}
+
+.info {
+  color: hsl(204, 43%, 93%);
+  margin-bottom: 2rem;
+}
+
+.left-side p span {
+  font-size: 2.5rem;
+  margin-right: 1rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 240px;
+  height: 50px;
+  background-color: hsl(71, 73%, 54%);
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  box-shadow: -5px 2px 25px -3px rgba(0, 0, 0, 0.75);
+}
+
+@media (max-width: 600px) {
+  .under-div {
+    flex-direction: column;
+  }
+  .up-div {
+    padding: 1.5rem;
+    width: 350px;
+  }
+  .right-side {
+    margin-bottom: 1rem;
+  }
+
+  .header {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+  }
+
+  .header-2 {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .text {
+  line-height: 30px;
+    font-size: 1rem;
+  }
+
+  
+.container {
+
+    margin-top: 3rem;
+  }
+}
