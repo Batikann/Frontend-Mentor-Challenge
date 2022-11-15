@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    background-repeat: no-repeat;
+    background-color: hsl(229, 57%, 11%);
+    position: relative;
+}
+.container{
+    background-image: url("images/bg-desktop.png");
+    width: 100vh;
+    height: auto;
+}
