@@ -1,6 +1,6 @@
-const shareBtn=document.querySelector('.share-icon-div');
-const tooltip=document.querySelector('.tooltip-container');
+const shareBtn=document.querySelector('button');
+const tooltip=document.querySelector('.tooltip');
 
 shareBtn.addEventListener('click',()=>{
-   tooltip.classList.toggle('opacity')
+   tooltip.classList.toggle('hidden')
 })
