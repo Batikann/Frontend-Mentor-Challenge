@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: hsl(225, 100%, 94%);
+  text-align: center;
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 2rem;
+}
+.img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.context {
+  padding: 10%;
+}
+
+.plan {
+  display: flex;
+  justify-content: space-between;
+  background-color: hsl(225, 100%, 98%);
+  padding: 6%;
+  border-radius: 15px;
+  margin-bottom: 3rem;
+  align-items: center;
+}
+
+.text {
+  color: hsl(224, 23%, 55%);
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin-bottom: 1.8rem;
+}
+
+.plan div:first-child {
+  display: flex;
+}
+
+.left-side img {
+  margin-right: 25px;
+}
+
+.right-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.plan-text {
+  margin-bottom: 8px;
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+  font-size: 1.1rem;
+}
+
+.price {
+  color: hsl(224, 23%, 55%);
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.title {
+  margin-top: -2rem;
+  margin-bottom: 2rem;
+  color: hsl(223, 47%, 23%);
+}
+
+button {
+  outline: none;
+  cursor: pointer;
+  border: none;
+}
+
+span {
+  color: hsl(245, 75%, 52%);
+  font-weight: 700;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+span:hover {
+  text-decoration: none;
+  opacity: 0.5;
+}
+
+.btns {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-1 {
+  margin-bottom: 1rem;
+  background-color: hsl(245, 75%, 52%);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: 10px;
+  margin-bottom: 3rem;
+  font-family: "Red Hat Display", sans-serif;
+  box-shadow: 0px 10px 58px -11px rgba(56, 41, 224, 0.75);
+  padding: 0.8rem;
+}
+
+.btn-1:hover {
+  opacity: 0.8;
+}
+
+.btn-2 {
+  background-color: #fff;
+  font-family: "Red Hat Display", sans-serif;
+  color: hsl(224, 23%, 55%);
+  font-weight: 900;
+  font-size: 1rem;
+  margin-bottom: -1rem;
+  cursor: pointer;
+}
+
+.btn-2:hover {
+  color: hsl(223, 47%, 23%);
+}
+
+@media only screen and (max-width: 426px) {
+
+  .title{
+    margin-top: 1rem;
+  }
+
+  .text {
+    font-size: 1.1rem;
+  }
+
+  .context {
+    padding: 8%;
+  }
+
+  .plan-text,
+  .price {
+    font-size: 1rem;
+  }
+
+  span {
+    font-size: 1rem;
+  }
+
+  .btn-2 {
+    margin-bottom: 1rem;
+  }
+
+  .left-side img{
+    margin-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 321px) {
+
+    .title{
+      margin-top: 1rem;
+    }
+  
+    .text {
+      font-size: 1.1rem;
+    }
+  
+    .context {
+      padding: 4%;
+    }
+  
+    .plan-text,
+    .price {
+      font-size: 0.8rem;
+    }
+
+    .plan-text{
+        margin-bottom: 3px;
+    }
+  
+    span {
+      font-size: 1rem;
+    }
+  
+    .btn-2 {
+      margin-bottom: 1rem;
+    }
+
+    .plan div:first-child{
+        display: flex;
+        align-items: center;
+    }
+
+    .left-side img{
+        margin-right: 5px;
+    }
+   
+  }

@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+body {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1020px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 2rem;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.card-1,
+.card-2,
+.card-3 {
+  padding: 15%;
+}
+
+.card-1 {
+  background-color: hsl(31, 77%, 52%);
+}
+.card-2 {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.card-3 {
+  background-color: hsl(179, 100%, 13%);
+}
+
+.title {
+  text-transform: uppercase;
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  color: #fff;
+  font-size: 2.5rem;
+}
+
+.text {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: "Lexend Deca", sans-serif;
+  line-height: 1.7;
+  font-weight: 400;
+}
+
+.btn {
+  padding: 1rem;
+  width: 75%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  border-radius: 30px;
+  margin-top: 5rem;
+  background-color: hsl(0, 0%, 95%);
+}
+
+.card-1 .btn {
+  color: hsl(31, 77%, 52%);
+}
+
+.card-2 .btn {
+  color: hsl(184, 100%, 22%);
+}
+
+.card-3 .btn {
+  color: hsl(179, 100%, 13%);
+}
+
+.card-1 .btn:hover {
+  background-color: hsl(31, 77%, 52%);
+  color: #fff;
+  border: 2px solid hsl(0, 0%, 95%);
+}
+
+.card-2 .btn:hover {
+  background-color: hsl(184, 100%, 22%);
+  color: #fff;
+  border: 2px solid hsl(0, 0%, 95%);
+}
+
+.card-3 .btn:hover {
+  background-color: hsl(179, 100%, 13%);
+  color: #fff;
+  border: 2px solid hsl(0, 0%, 95%);
+}
+
+@media only screen and (max-width: 768px) and (min-width: 426px) {
+  body {
+    font-size: 12px;
+  }
+
+  .card-1,
+  .card-2,
+  .card-3 {
+    padding: 10%;
+  }
+
+  .btn{
+    margin-top: 1rem;
+    width: 80%;
+  }
+
+
+}
+
+@media only screen and (max-width: 426px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .text {
+    margin-bottom: -3.5rem;
+  }
+
+  .btn {
+    width: 60%;
+  }
+}
