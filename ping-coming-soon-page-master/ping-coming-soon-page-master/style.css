@@ -6,11 +6,20 @@
     margin: 0;
 }
 
+:root{
+    --blue:hsl(223, 87%, 63%);
+    --pale-blue: hsl(223, 100%, 88%);
+    --light-red:hsl(354, 100%, 66%);
+    --gray: hsl(0, 0%, 59%);
+    --very-dark-blue:hsl(209, 33%, 12%);
+}
+
+
 body{
     font-family: 'Libre Franklin', sans-serif;
     display: flex;
-    justify-content: center;
     align-items: center;
+    min-height: 100vh;
 }
 
 h1{
@@ -18,58 +27,197 @@ h1{
     margin-top: 1rem;
 }
 
+.container{
+    max-width: 1020px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.logo{
+    margin-bottom: 1.5rem;
+}
+
+.p-1{
+    font-size: 3rem;
+    color: var(--gray);
+}
+
+
+.p-2{
+    color: var(--very-dark-blue);
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin: 2rem 0;
+}
+
+input{
+    width: 25rem;
+    padding: 1rem;
+    height: 3rem;
+    border-radius: 30px;
+    border: 1px solid var(--gray);
+    margin-right: 0.5rem;
+    position: relative;
+    margin-bottom: 0.5rem;
+    outline: none;
+}
+input::placeholder{
+    font-weight: 300;
+    position: absolute;
+    left: 20px;
+}
+
+.btn{
+    height: 3rem;
+    width: 12rem;
+    border-radius: 30px;
+    border: none;
+    background-color: var(--blue);
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn:hover{
+    opacity: 0.7;
+}
+
+form{
+    margin-bottom: 5rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+
+.bold{
+    font-weight: 700;
+    color: var(--very-dark-blue);
+}
+
+.error{
+    left: 240px;
+    top: 60px;
+    font-size: 0.8rem;
+    color: var(--light-red);
+    display: flex;
+    width: 350px;
+    margin: 0 auto;
+    display: none;
+}
+
+.display-div{
+    left: 240px;
+    top: 60px;
+    font-size: 0.8rem;
+    color: var(--light-red);
+    display: flex;
+    width: 350px;
+    margin: 0 auto;
+    display: none;
+    display: block;
+}
+
+
+img{
+    width: 65%;
+    margin: 1rem 0;
+}
+
 .dot{
     color: hsl(223, 87%, 63%);
 }
 
-.container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-img{
-    width: 50%;
-}
-
-.p-1{
-    font-size: 2.5rem;
-    font-weight: 300;
-    color: hsl(0, 0%, 59%);
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-}
-
-.p-2{
-    margin-bottom: 1rem;
-}
-
-.bold{
-    font-weight: 700;
-    color: black;
-}
-
-.content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 .social{
     list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
 }
 
 .social-icon{
-    display: inline-block;
-    color: hsl(223, 87%, 63%);
-    
+    margin-right: 2rem;
+}
+
+.social li{
+    border: 1px solid var(--blue);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.social li:hover{
+    background-color: var(--blue);
+}
+
+.social li:hover.social-icon i{
+    color: #fff;
+}
+
+.social li i{
+  color: var(--blue);
+}
+
+.footer div{
+    color: var(--gray);
+    margin-bottom: 1rem;
+}
+
+
+@media only screen and (max-width:426px){
+   body{
+    margin: 0 auto;
+   }
+
+
+    form{
+        margin-bottom: 5rem;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .btn{
+        height: 3rem;
+        width: 20rem;
+        border-radius: 30px;
+        border: none;
+        background-color: var(--blue);
+        color: #fff;
+        font-weight: 600;
+        cursor: pointer;
+        margin-top: -1rem;
+    }
+
+    input{
+        width: 20rem;
+        padding: 1rem;
+        height: 3rem;
+        border-radius: 30px;
+        border: 1px solid var(--gray);
+        margin-right: 0.5rem;
+        position: relative;
+        margin-bottom: 3rem;
+        outline: none;
+    }
+
+    .display-div{
+        left: 20px;
+        position: absolute;
+        top: 40px;
+        font-size: 1rem;
+        color: var(--light-red);
+        display: flex;
+        width: 300px;
+        margin: 1rem auto;
+        display: none;
+        display: block;
+    }
+
+
 }
